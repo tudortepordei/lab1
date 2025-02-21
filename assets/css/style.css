@@ -65,7 +65,7 @@ img {
 
    .column {
     float: left;
-    width: 33.33%;
+    width: 30%;
     padding: 15px;
     justify-content: center;
     background-color: rgba(226, 201, 238, 0.632);
