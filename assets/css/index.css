@@ -8,8 +8,33 @@ body {
     /* background-position-x: center; */
     background-repeat: repeat;
     width: 100vh;
+    
 
 }
+
+/* Tema întunecată */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Stil pentru buton */
+.toggle-theme {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.toggle-theme:hover {
+    background-color: #0056b3;
+}
+
 
 nav {
     background: #002395;
@@ -83,4 +108,24 @@ main {
    
 h1 {
     text-align: center;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 15px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
