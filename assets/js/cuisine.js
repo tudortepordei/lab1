@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    const pages = ["index.html", "geography.html", "landmarks.html", "cuisine.html", "history.html"];
+    const pages = ["index.php", "geography.php", "landmarks.php", "cuisine.php", "history.php"];
 
     const currentPage = window.location.pathname.split("/").pop();
 
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     prevButton.addEventListener("click", function () {
         window.location.href = pages[currentIndex - 1];
     });
-    
+
     nextButton.addEventListener("click", function () {
         window.location.href = pages[currentIndex + 1]
     });

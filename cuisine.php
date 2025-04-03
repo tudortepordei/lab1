@@ -13,11 +13,11 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="index.html">Principal</a></li>
-                    <li><a href="geography.html">Geografia</a></li>
-                    <li><a href="landmarks.html">Atracții</a></li>
-                    <li><a href="cuisine.html">Bucătăria</a></li>
-                    <li><a href="history.html">Istoria</a></li>
+                    <li><a href="index.php">Principal</a></li>
+                    <li><a href="geography.php">Geografia</a></li>
+                    <li><a href="landmarks.php">Atracții</a></li>
+                    <li><a href="cuisine.php">Bucătăria</a></li>
+                    <li><a href="history.php">Istoria</a></li>
                 </ul>
             </nav>
         </header>
