@@ -13,12 +13,14 @@
         <header>
             <nav>
                 <ul>
+                    <li><a href="register.php">Înregistrare</a></li>
                     <li><a href="index.php">Principal</a></li>
                     <li><a href="geography.php">Geografia</a></li>
                     <li><a href="landmarks.php">Atracții</a></li>
                     <li><a href="cuisine.php">Bucătăria</a></li>
                     <li><a href="history.php">Istoria</a></li>
-                    </ul>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
             </nav>
         </header>
         <div class="prev">

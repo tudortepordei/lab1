@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     
-    const pages = ["index.php", "geography.php", "landmarks.php", "cuisine.php", "history.php"];
+    const pages = ["register.php","index.php", "geography.php", "landmarks.php", "cuisine.php", "history.php"];
 
     const currentPage = window.location.pathname.split("/").pop();
 
