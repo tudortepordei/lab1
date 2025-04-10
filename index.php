@@ -30,9 +30,13 @@ if (!isset($_SESSION['username'])) {
                 <li><a href="cuisine.php">Bucătăria</a></li>
                 <li><a href="history.php">Istoria</a></li>
                 <li><a href="logout.php">Logout</a></li>
+                <form method="POST" onsubmit="return confirm('Sigur vrei să ștergi contul? Această acțiune este ireversibilă!');">
+  <button type="submit" name="delete_account" style="background:red; color:white; padding:10px; border:none; border-radius:6px;">Șterge contul</button>
+</form>
             </ul>
         </nav>
     </header>
+    
     <div class="prev">
         <button class="prev-page">&#9665;</button>
     </div>
@@ -89,5 +93,26 @@ if (!isset($_SESSION['username'])) {
 <footer>
     <p>© 2025 Franța</p>
 </footer>
+<?php
+if (isset($_POST['delete_account'])) {
+    session_start();
+    include "db.php";
+
+    $users = $_SESSION['username'];
+
+    // Ștergem contul
+    $delete = "DELETE FROM users WHERE username='$users'";
+    $conn->query($delete);
+
+    // Distrugem sesiunea
+    session_unset();
+    session_destroy();
+
+    // Redirectăm la înregistrare sau login
+    header("Location: register.php");
+    exit();
+}
+?>
+
 
 </html>
